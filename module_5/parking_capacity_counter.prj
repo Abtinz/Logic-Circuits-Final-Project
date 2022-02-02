@@ -1,0 +1,3 @@
+verilog work "fullAdder.v"
+verilog work "wireOfSum.v"
+verilog work "parking_capacity_counter.v"

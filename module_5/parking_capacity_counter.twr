@@ -1,0 +1,116 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml parking_capacity_counter.twx parking_capacity_counter.ncd
+-o parking_capacity_counter.twr parking_capacity_counter.pcf
+
+Design file:              parking_capacity_counter.ncd
+Physical constraint file: parking_capacity_counter.pcf
+Device,package,speed:     xc7a100t,csg324,C,-3 (PRODUCTION 1.10 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+new_capacity<0>|empty<0>       |    6.560|
+new_capacity<0>|empty<1>       |    6.494|
+new_capacity<0>|empty<2>       |    6.326|
+new_capacity<0>|empty<3>       |    6.680|
+new_capacity<0>|parked<0>      |    6.666|
+new_capacity<0>|parked<1>      |    6.207|
+new_capacity<0>|parked<2>      |    6.497|
+new_capacity<0>|parked<3>      |    6.317|
+new_capacity<1>|empty<0>       |    6.429|
+new_capacity<1>|empty<1>       |    6.363|
+new_capacity<1>|empty<2>       |    6.394|
+new_capacity<1>|empty<3>       |    6.549|
+new_capacity<1>|parked<0>      |    6.535|
+new_capacity<1>|parked<1>      |    6.076|
+new_capacity<1>|parked<2>      |    6.366|
+new_capacity<1>|parked<3>      |    6.186|
+new_capacity<2>|empty<0>       |    6.413|
+new_capacity<2>|empty<1>       |    6.347|
+new_capacity<2>|empty<2>       |    6.232|
+new_capacity<2>|empty<3>       |    6.533|
+new_capacity<2>|parked<0>      |    6.519|
+new_capacity<2>|parked<1>      |    6.060|
+new_capacity<2>|parked<2>      |    6.350|
+new_capacity<2>|parked<3>      |    6.170|
+new_capacity<3>|empty<0>       |    6.309|
+new_capacity<3>|empty<1>       |    6.243|
+new_capacity<3>|empty<2>       |    6.532|
+new_capacity<3>|empty<3>       |    6.676|
+new_capacity<3>|parked<0>      |    6.415|
+new_capacity<3>|parked<1>      |    5.956|
+new_capacity<3>|parked<2>      |    6.246|
+new_capacity<3>|parked<3>      |    6.066|
+new_capacity<4>|empty<0>       |    6.538|
+new_capacity<4>|empty<1>       |    6.472|
+new_capacity<4>|empty<2>       |    6.233|
+new_capacity<4>|empty<3>       |    6.658|
+new_capacity<4>|parked<0>      |    6.644|
+new_capacity<4>|parked<1>      |    6.185|
+new_capacity<4>|parked<2>      |    6.475|
+new_capacity<4>|parked<3>      |    6.295|
+new_capacity<5>|empty<0>       |    5.433|
+new_capacity<5>|empty<1>       |    6.013|
+new_capacity<5>|empty<2>       |    5.680|
+new_capacity<5>|empty<3>       |    5.291|
+new_capacity<5>|parked<0>      |    5.539|
+new_capacity<5>|parked<1>      |    5.730|
+new_capacity<5>|parked<2>      |    5.358|
+new_capacity<5>|parked<3>      |    5.184|
+new_capacity<6>|empty<0>       |    5.615|
+new_capacity<6>|empty<1>       |    5.489|
+new_capacity<6>|empty<2>       |    5.543|
+new_capacity<6>|empty<3>       |    5.301|
+new_capacity<6>|parked<0>      |    5.721|
+new_capacity<6>|parked<1>      |    5.192|
+new_capacity<6>|parked<2>      |    5.537|
+new_capacity<6>|parked<3>      |    5.176|
+new_capacity<7>|empty<0>       |    5.300|
+new_capacity<7>|empty<1>       |    5.418|
+new_capacity<7>|empty<2>       |    5.602|
+new_capacity<7>|empty<3>       |    5.464|
+new_capacity<7>|parked<0>      |    5.406|
+new_capacity<7>|parked<1>      |    5.127|
+new_capacity<7>|parked<2>      |    5.222|
+new_capacity<7>|parked<3>      |    5.040|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Jan 06 01:45:29 2022 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 5002 MB
+
+
+
