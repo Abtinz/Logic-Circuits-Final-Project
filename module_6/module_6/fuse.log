@@ -1,0 +1,51 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/ABTIN/Desktop/Logic Circuit Final Project Section-01/moudle_6/module_6/test_bench_smart_parking_isim_beh.exe -prj C:/Users/ABTIN/Desktop/Logic Circuit Final Project Section-01/moudle_6/module_6/test_bench_smart_parking_beh.prj work.test_bench_smart_parking work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/ABTIN/Desktop/Logic Circuit Final Project Section-01/moudle_6/module_6/fullAdder.v" into library work
+Analyzing Verilog file "C:/Users/ABTIN/Desktop/Logic Circuit Final Project Section-01/moudle_6/module_6/adderSubtractor.v" into library work
+Analyzing Verilog file "C:/Users/ABTIN/Desktop/Logic Circuit Final Project Section-01/moudle_6/module_6/wireOfSum.v" into library work
+Analyzing Verilog file "C:/Users/ABTIN/Desktop/Logic Circuit Final Project Section-01/moudle_6/module_6/Subtractors.v" into library work
+Analyzing Verilog file "C:/Users/ABTIN/Desktop/Logic Circuit Final Project Section-01/moudle_6/module_6/park_space_number.v" into library work
+Analyzing Verilog file "C:/Users/ABTIN/Desktop/Logic Circuit Final Project Section-01/moudle_6/module_6/exit_parking_lot.v" into library work
+Analyzing Verilog file "C:/Users/ABTIN/Desktop/Logic Circuit Final Project Section-01/moudle_6/module_6/entry_park.v" into library work
+Analyzing Verilog file "C:/Users/ABTIN/Desktop/Logic Circuit Final Project Section-01/moudle_6/module_6/decrypt.v" into library work
+Analyzing Verilog file "C:/Users/ABTIN/Desktop/Logic Circuit Final Project Section-01/moudle_6/module_6/update_capacity.v" into library work
+Analyzing Verilog file "C:/Users/ABTIN/Desktop/Logic Circuit Final Project Section-01/moudle_6/module_6/token_production.v" into library work
+Analyzing Verilog file "C:/Users/ABTIN/Desktop/Logic Circuit Final Project Section-01/moudle_6/module_6/time_calculate.v" into library work
+Analyzing Verilog file "C:/Users/ABTIN/Desktop/Logic Circuit Final Project Section-01/moudle_6/module_6/parking_capacity_counter.v" into library work
+Analyzing Verilog file "C:/Users/ABTIN/Desktop/Logic Circuit Final Project Section-01/moudle_6/module_6/exit_park.v" into library work
+Analyzing Verilog file "C:/Users/ABTIN/Desktop/Logic Circuit Final Project Section-01/moudle_6/module_6/entry_checker.v" into library work
+Analyzing Verilog file "C:/Users/ABTIN/Desktop/Logic Circuit Final Project Section-01/moudle_6/module_6/calculate_new_capacity.v" into library work
+Analyzing Verilog file "C:/Users/ABTIN/Desktop/Logic Circuit Final Project Section-01/moudle_6/module_6/Smart_Parking.v" into library work
+Analyzing Verilog file "C:/Users/ABTIN/Desktop/Logic Circuit Final Project Section-01/moudle_6/module_6/test_bench_smart_parking.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:189 - "C:/Users/ABTIN/Desktop/Logic Circuit Final Project Section-01/moudle_6/module_6/Subtractors.v" Line 45: Size mismatch in connection of port <cin>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/ABTIN/Desktop/Logic Circuit Final Project Section-01/moudle_6/module_6/Subtractors.v" Line 34: Size mismatch in connection of port <cin>. Formal port size is 1-bit while actual signal size is 32-bit.
+Completed static elaboration
+Compiling module entry_checker
+Compiling module park_space_number
+Compiling module entry_park
+Compiling module token_production
+Compiling module update_capacity
+Compiling module decrypt
+Compiling module exit_parking_lot
+Compiling module exit_park
+Compiling module calculate_new_capacity
+Compiling module fullAdder
+Compiling module wireOfSum
+Compiling module parking_capacity_counter
+Compiling module adderSubtractor
+Compiling module Subtractors
+Compiling module time_calculate
+Compiling module smart_parking
+Compiling module test_bench_smart_parking
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 2 sub-compilation(s) to finish...
+Compiled 18 Verilog Units
+Built simulation executable C:/Users/ABTIN/Desktop/Logic Circuit Final Project Section-01/moudle_6/module_6/test_bench_smart_parking_isim_beh.exe
+Fuse Memory Usage: 28960 KB
+Fuse CPU Usage: 2406 ms

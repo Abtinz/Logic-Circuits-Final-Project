@@ -1,0 +1,608 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.32 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.32 secs
+ 
+--> Reading design: smart_parking.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "smart_parking.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "smart_parking"
+Output Format                      : NGC
+Target Device                      : xa7a100t-2I-csg324
+
+---- Source Options
+Top Module Name                    : smart_parking
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\ABTIN\Desktop\Logic Circuit Final Project Section-01\moudle_6\module_6\fullAdder.v" into library work
+Parsing module <fullAdder>.
+Analyzing Verilog file "C:\Users\ABTIN\Desktop\Logic Circuit Final Project Section-01\moudle_6\module_6\adderSubtractor.v" into library work
+Parsing module <adderSubtractor>.
+Analyzing Verilog file "C:\Users\ABTIN\Desktop\Logic Circuit Final Project Section-01\moudle_6\module_6\wireOfSum.v" into library work
+Parsing module <wireOfSum>.
+Analyzing Verilog file "C:\Users\ABTIN\Desktop\Logic Circuit Final Project Section-01\moudle_6\module_6\Subtractors.v" into library work
+Parsing module <Subtractors>.
+Analyzing Verilog file "C:\Users\ABTIN\Desktop\Logic Circuit Final Project Section-01\moudle_6\module_6\park_space_number.v" into library work
+Parsing module <park_space_number>.
+Analyzing Verilog file "C:\Users\ABTIN\Desktop\Logic Circuit Final Project Section-01\moudle_6\module_6\exit_parking_lot.v" into library work
+Parsing module <exit_parking_lot>.
+Analyzing Verilog file "C:\Users\ABTIN\Desktop\Logic Circuit Final Project Section-01\moudle_6\module_6\entry_park.v" into library work
+Parsing module <entry_checker>.
+Analyzing Verilog file "C:\Users\ABTIN\Desktop\Logic Circuit Final Project Section-01\moudle_6\module_6\decrypt.v" into library work
+Parsing module <decrypt>.
+Analyzing Verilog file "C:\Users\ABTIN\Desktop\Logic Circuit Final Project Section-01\moudle_6\module_6\update_capacity.v" into library work
+Parsing module <update_capacity>.
+Analyzing Verilog file "C:\Users\ABTIN\Desktop\Logic Circuit Final Project Section-01\moudle_6\module_6\token_production.v" into library work
+Parsing module <token_production>.
+Analyzing Verilog file "C:\Users\ABTIN\Desktop\Logic Circuit Final Project Section-01\moudle_6\module_6\time_calculate.v" into library work
+Parsing module <time_calculate>.
+Analyzing Verilog file "C:\Users\ABTIN\Desktop\Logic Circuit Final Project Section-01\moudle_6\module_6\parking_capacity_counter.v" into library work
+Parsing module <parking_capacity_counter>.
+Analyzing Verilog file "C:\Users\ABTIN\Desktop\Logic Circuit Final Project Section-01\moudle_6\module_6\exit_park.v" into library work
+Parsing module <exit_park>.
+Analyzing Verilog file "C:\Users\ABTIN\Desktop\Logic Circuit Final Project Section-01\moudle_6\module_6\entry_checker.v" into library work
+Parsing module <entry_park>.
+Analyzing Verilog file "C:\Users\ABTIN\Desktop\Logic Circuit Final Project Section-01\moudle_6\module_6\calculate_new_capacity.v" into library work
+Parsing module <calculate_new_capacity>.
+Analyzing Verilog file "C:\Users\ABTIN\Desktop\Logic Circuit Final Project Section-01\moudle_6\module_6\Smart_Parking.v" into library work
+Parsing module <smart_parking>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <smart_parking>.
+
+Elaborating module <entry_park>.
+
+Elaborating module <entry_checker>.
+
+Elaborating module <park_space_number>.
+
+Elaborating module <token_production>.
+
+Elaborating module <exit_park>.
+
+Elaborating module <decrypt>.
+
+Elaborating module <exit_parking_lot>.
+
+Elaborating module <update_capacity>.
+WARNING:HDLCompiler:1127 - "C:\Users\ABTIN\Desktop\Logic Circuit Final Project Section-01\moudle_6\module_6\Smart_Parking.v" Line 61: Assignment to parking_capacity_New ignored, since the identifier is never used
+
+Elaborating module <calculate_new_capacity>.
+WARNING:HDLCompiler:296 - "C:\Users\ABTIN\Desktop\Logic Circuit Final Project Section-01\moudle_6\module_6\calculate_new_capacity.v" Line 40: case condition never applies due to comparison with x or z
+WARNING:HDLCompiler:296 - "C:\Users\ABTIN\Desktop\Logic Circuit Final Project Section-01\moudle_6\module_6\calculate_new_capacity.v" Line 41: case condition never applies due to comparison with x or z
+WARNING:HDLCompiler:296 - "C:\Users\ABTIN\Desktop\Logic Circuit Final Project Section-01\moudle_6\module_6\calculate_new_capacity.v" Line 42: case condition never applies due to comparison with x or z
+WARNING:HDLCompiler:296 - "C:\Users\ABTIN\Desktop\Logic Circuit Final Project Section-01\moudle_6\module_6\calculate_new_capacity.v" Line 43: case condition never applies due to comparison with x or z
+WARNING:HDLCompiler:296 - "C:\Users\ABTIN\Desktop\Logic Circuit Final Project Section-01\moudle_6\module_6\calculate_new_capacity.v" Line 44: case condition never applies due to comparison with x or z
+WARNING:HDLCompiler:296 - "C:\Users\ABTIN\Desktop\Logic Circuit Final Project Section-01\moudle_6\module_6\calculate_new_capacity.v" Line 45: case condition never applies due to comparison with x or z
+WARNING:HDLCompiler:296 - "C:\Users\ABTIN\Desktop\Logic Circuit Final Project Section-01\moudle_6\module_6\calculate_new_capacity.v" Line 46: case condition never applies due to comparison with x or z
+
+Elaborating module <parking_capacity_counter>.
+
+Elaborating module <wireOfSum>.
+
+Elaborating module <fullAdder>.
+
+Elaborating module <time_calculate>.
+
+Elaborating module <Subtractors>.
+
+Elaborating module <adderSubtractor>.
+WARNING:HDLCompiler:189 - "C:\Users\ABTIN\Desktop\Logic Circuit Final Project Section-01\moudle_6\module_6\Subtractors.v" Line 34: Size mismatch in connection of port <cin>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Users\ABTIN\Desktop\Logic Circuit Final Project Section-01\moudle_6\module_6\Subtractors.v" Line 45: Size mismatch in connection of port <cin>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:Xst:2972 - "C:\Users\ABTIN\Desktop\Logic Circuit Final Project Section-01\moudle_6\module_6\Smart_Parking.v" line 61. All outputs of instance <module4> of block <update_capacity> are unconnected in block <smart_parking>. Underlying logic will be removed.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <smart_parking>.
+    Related source file is "C:\Users\ABTIN\Desktop\Logic Circuit Final Project Section-01\moudle_6\module_6\Smart_Parking.v".
+INFO:Xst:3210 - "C:\Users\ABTIN\Desktop\Logic Circuit Final Project Section-01\moudle_6\module_6\Smart_Parking.v" line 61: Output port <parking_capacity_new> of the instance <module4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\ABTIN\Desktop\Logic Circuit Final Project Section-01\moudle_6\module_6\Smart_Parking.v" line 61: Output port <cap> of the instance <module4> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <smart_parking> synthesized.
+
+Synthesizing Unit <entry_park>.
+    Related source file is "C:\Users\ABTIN\Desktop\Logic Circuit Final Project Section-01\moudle_6\module_6\entry_checker.v".
+    Summary:
+	no macro.
+Unit <entry_park> synthesized.
+
+Synthesizing Unit <entry_checker>.
+    Related source file is "C:\Users\ABTIN\Desktop\Logic Circuit Final Project Section-01\moudle_6\module_6\entry_park.v".
+    Summary:
+	no macro.
+Unit <entry_checker> synthesized.
+
+Synthesizing Unit <park_space_number>.
+    Related source file is "C:\Users\ABTIN\Desktop\Logic Circuit Final Project Section-01\moudle_6\module_6\park_space_number.v".
+WARNING:Xst:737 - Found 1-bit latch for signal <park_number<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <park_number<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <park_number<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   3 Latch(s).
+	inferred  14 Multiplexer(s).
+Unit <park_space_number> synthesized.
+
+Synthesizing Unit <token_production>.
+    Related source file is "C:\Users\ABTIN\Desktop\Logic Circuit Final Project Section-01\moudle_6\module_6\token_production.v".
+    Summary:
+Unit <token_production> synthesized.
+
+Synthesizing Unit <exit_park>.
+    Related source file is "C:\Users\ABTIN\Desktop\Logic Circuit Final Project Section-01\moudle_6\module_6\exit_park.v".
+    Summary:
+	no macro.
+Unit <exit_park> synthesized.
+
+Synthesizing Unit <decrypt>.
+    Related source file is "C:\Users\ABTIN\Desktop\Logic Circuit Final Project Section-01\moudle_6\module_6\decrypt.v".
+    Summary:
+Unit <decrypt> synthesized.
+
+Synthesizing Unit <exit_parking_lot>.
+    Related source file is "C:\Users\ABTIN\Desktop\Logic Circuit Final Project Section-01\moudle_6\module_6\exit_parking_lot.v".
+    Found 8x8-bit Read Only RAM for signal <park_location>
+    Summary:
+	inferred   1 RAM(s).
+Unit <exit_parking_lot> synthesized.
+
+Synthesizing Unit <calculate_new_capacity>.
+    Related source file is "C:\Users\ABTIN\Desktop\Logic Circuit Final Project Section-01\moudle_6\module_6\calculate_new_capacity.v".
+WARNING:Xst:737 - Found 1-bit latch for signal <new_capacity<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   1 Latch(s).
+Unit <calculate_new_capacity> synthesized.
+
+Synthesizing Unit <parking_capacity_counter>.
+    Related source file is "C:\Users\ABTIN\Desktop\Logic Circuit Final Project Section-01\moudle_6\module_6\parking_capacity_counter.v".
+    Summary:
+	no macro.
+Unit <parking_capacity_counter> synthesized.
+
+Synthesizing Unit <wireOfSum>.
+    Related source file is "C:\Users\ABTIN\Desktop\Logic Circuit Final Project Section-01\moudle_6\module_6\wireOfSum.v".
+INFO:Xst:3210 - "C:\Users\ABTIN\Desktop\Logic Circuit Final Project Section-01\moudle_6\module_6\wireOfSum.v" line 39: Output port <cout> of the instance <A4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\ABTIN\Desktop\Logic Circuit Final Project Section-01\moudle_6\module_6\wireOfSum.v" line 44: Output port <cout> of the instance <A8> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <wireOfSum> synthesized.
+
+Synthesizing Unit <fullAdder>.
+    Related source file is "C:\Users\ABTIN\Desktop\Logic Circuit Final Project Section-01\moudle_6\module_6\fullAdder.v".
+    Summary:
+Unit <fullAdder> synthesized.
+
+Synthesizing Unit <time_calculate>.
+    Related source file is "C:\Users\ABTIN\Desktop\Logic Circuit Final Project Section-01\moudle_6\module_6\time_calculate.v".
+    Summary:
+	no macro.
+Unit <time_calculate> synthesized.
+
+Synthesizing Unit <Subtractors>.
+    Related source file is "C:\Users\ABTIN\Desktop\Logic Circuit Final Project Section-01\moudle_6\module_6\Subtractors.v".
+INFO:Xst:3210 - "C:\Users\ABTIN\Desktop\Logic Circuit Final Project Section-01\moudle_6\module_6\Subtractors.v" line 41: Output port <cout> of the instance <lastSub> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\ABTIN\Desktop\Logic Circuit Final Project Section-01\moudle_6\module_6\Subtractors.v" line 52: Output port <cout> of the instance <lastadder> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <Subtractors> synthesized.
+
+Synthesizing Unit <adderSubtractor>.
+    Related source file is "C:\Users\ABTIN\Desktop\Logic Circuit Final Project Section-01\moudle_6\module_6\adderSubtractor.v".
+    Summary:
+Unit <adderSubtractor> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 8x8-bit single-port Read Only RAM                     : 1
+# Latches                                              : 4
+ 1-bit latch                                           : 4
+# Multiplexers                                         : 14
+ 1-bit 2-to-1 multiplexer                              : 14
+# Xors                                                 : 170
+ 1-bit xor2                                            : 168
+ 3-bit xor2                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst - The specified part-type was not generated at build time. XST is loading the full part-type and will therefore consume more CPU and memory.
+Loading device for application Rf_Device from file '7a100t.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+Loading device for application Rf_Device from file '7a100t.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+
+Synthesizing (advanced) Unit <exit_parking_lot>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_park_location> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 8-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <park_number>   |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <park_location> |          |
+    -----------------------------------------------------------------------
+Unit <exit_parking_lot> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 8x8-bit single-port distributed Read Only RAM         : 1
+# Multiplexers                                         : 14
+ 1-bit 2-to-1 multiplexer                              : 14
+# Xors                                                 : 170
+ 1-bit xor2                                            : 168
+ 3-bit xor2                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:3001 - This design contains one or more registers or latches with an active
+   asynchronous set and asynchronous reset. While this circuit can be built,
+   it creates a sub-optimal implementation in terms of area, power and
+   performance. For a more optimal implementation Xilinx highly recommends
+   one of the following:
+
+          1) Remove either the set or reset from all registers and latches if
+             not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Automotive Artix7 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set and reset:
+    park_number_2 in unit <park_space_number>
+    park_number_0 in unit <park_space_number>
+    park_number_1 in unit <park_space_number>
+
+
+Optimizing unit <smart_parking> ...
+
+Optimizing unit <park_space_number> ...
+
+Optimizing unit <Subtractors> ...
+
+Optimizing unit <parking_capacity_counter> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block smart_parking, actual ratio is 0.
+Latch module5/new_capacity_0 has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : smart_parking.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 49
+#      GND                         : 1
+#      LUT2                        : 2
+#      LUT3                        : 11
+#      LUT4                        : 8
+#      LUT5                        : 8
+#      LUT6                        : 18
+#      VCC                         : 1
+# FlipFlops/Latches                : 5
+#      LD                          : 3
+#      LDP                         : 2
+# IO Buffers                       : 49
+#      IBUF                        : 25
+#      OBUF                        : 24
+
+Device utilization summary:
+---------------------------
+
+Selected Device : xa7a100tcsg324-2i 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:               4  out of  126800     0%  
+ Number of Slice LUTs:                   47  out of  63400     0%  
+    Number used as Logic:                47  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     47
+   Number with an unused Flip Flop:      43  out of     47    91%  
+   Number with an unused LUT:             0  out of     47     0%  
+   Number of fully used LUT-FF pairs:     4  out of     47     8%  
+   Number of unique control sets:         4
+
+IO Utilization: 
+ Number of IOs:                          53
+ Number of bonded IOBs:                  49  out of    210    23%  
+    IOB Flip Flops/Latches:               1
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+------------------------------------------------------+---------------------------------+-------+
+Clock Signal                                          | Clock buffer(FF name)           | Load  |
+------------------------------------------------------+---------------------------------+-------+
+N1                                                    | NONE(module5/new_capacity_0)    | 2     |
+module1/p/park_number_2_G(module1/p/park_number_2_G:O)| NONE(*)(module1/p/park_number_2)| 1     |
+module1/p/park_number_0_G(module1/p/park_number_0_G:O)| NONE(*)(module1/p/park_number_0)| 1     |
+module1/p/park_number_1_G(module1/p/park_number_1_G:O)| NONE(*)(module1/p/park_number_1)| 1     |
+------------------------------------------------------+---------------------------------+-------+
+(*) These 3 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 2.985ns
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 3.443ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'module1/p/park_number_2_G'
+  Total number of paths / destination ports: 25 / 1
+-------------------------------------------------------------------------
+Offset:              2.769ns (Levels of Logic = 6)
+  Source:            parking_capacity<3> (PAD)
+  Destination:       module1/p/park_number_2 (LATCH)
+  Destination Clock: module1/p/park_number_2_G falling
+
+  Data Path: parking_capacity<3> to module1/p/park_number_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            12   0.001   0.677  parking_capacity_3_IBUF (parking_capacity_3_IBUF)
+     LUT4:I0->O            1   0.097   0.355  module1/e/enable_SW0 (N2)
+     LUT6:I5->O            3   0.097   0.367  module1/e/enable (module1/enable)
+     LUT4:I3->O            1   0.097   0.439  module1/p/GND_4_o_PWR_4_o_AND_30_o2_SW0 (N4)
+     LUT6:I4->O            2   0.097   0.444  module1/p/GND_4_o_PWR_4_o_AND_30_o2 (module1/p/GND_4_o_PWR_4_o_AND_30_o)
+     LUT3:I1->O            1   0.097   0.000  module1/p/park_number_2_D (module1/p/park_number_2_D)
+     LD:D                     -0.028          module1/p/park_number_2
+    ----------------------------------------
+    Total                      2.769ns (0.486ns logic, 2.283ns route)
+                                       (17.6% logic, 82.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'module1/p/park_number_0_G'
+  Total number of paths / destination ports: 25 / 1
+-------------------------------------------------------------------------
+Offset:              2.985ns (Levels of Logic = 6)
+  Source:            parking_capacity<3> (PAD)
+  Destination:       module1/p/park_number_0 (LATCH)
+  Destination Clock: module1/p/park_number_0_G falling
+
+  Data Path: parking_capacity<3> to module1/p/park_number_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            12   0.001   0.677  parking_capacity_3_IBUF (parking_capacity_3_IBUF)
+     LUT4:I0->O            1   0.097   0.355  module1/e/enable_SW0 (N2)
+     LUT6:I5->O            3   0.097   0.451  module1/e/enable (module1/enable)
+     LUT4:I2->O            1   0.097   0.571  module1/p/GND_4_o_PWR_4_o_AND_34_o_SW0 (N10)
+     LUT6:I3->O            2   0.097   0.444  module1/p/GND_4_o_PWR_4_o_AND_34_o (module1/p/GND_4_o_PWR_4_o_AND_34_o)
+     LUT3:I1->O            1   0.097   0.000  module1/p/park_number_0_D (module1/p/park_number_0_D)
+     LD:D                     -0.028          module1/p/park_number_0
+    ----------------------------------------
+    Total                      2.985ns (0.486ns logic, 2.499ns route)
+                                       (16.3% logic, 83.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'module1/p/park_number_1_G'
+  Total number of paths / destination ports: 25 / 1
+-------------------------------------------------------------------------
+Offset:              2.985ns (Levels of Logic = 6)
+  Source:            parking_capacity<3> (PAD)
+  Destination:       module1/p/park_number_1 (LATCH)
+  Destination Clock: module1/p/park_number_1_G falling
+
+  Data Path: parking_capacity<3> to module1/p/park_number_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            12   0.001   0.677  parking_capacity_3_IBUF (parking_capacity_3_IBUF)
+     LUT4:I0->O            1   0.097   0.355  module1/e/enable_SW0 (N2)
+     LUT6:I5->O            3   0.097   0.451  module1/e/enable (module1/enable)
+     LUT4:I2->O            1   0.097   0.571  module1/p/GND_4_o_PWR_4_o_AND_32_o1_SW0 (N6)
+     LUT6:I3->O            2   0.097   0.444  module1/p/GND_4_o_PWR_4_o_AND_32_o1 (module1/p/GND_4_o_PWR_4_o_AND_32_o)
+     LUT3:I1->O            1   0.097   0.000  module1/p/park_number_1_D (module1/p/park_number_1_D)
+     LD:D                     -0.028          module1/p/park_number_1
+    ----------------------------------------
+    Total                      2.985ns (0.486ns logic, 2.499ns route)
+                                       (16.3% logic, 83.7% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 268 / 24
+-------------------------------------------------------------------------
+Delay:               3.443ns (Levels of Logic = 7)
+  Source:            time_in<2> (PAD)
+  Destination:       time_total<7> (PAD)
+
+  Data Path: time_in<2> to time_total<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   0.001   0.765  time_in_2_IBUF (time_in_2_IBUF)
+     LUT6:I0->O            4   0.097   0.372  module7/TimeSub/thirdSub/f/cout1 (module7/TimeSub/carryOut<2>)
+     LUT5:I4->O            4   0.097   0.372  module7/TimeSub/FifthSub/f/cout1 (module7/TimeSub/carryOut<4>)
+     LUT3:I2->O            1   0.097   0.355  module7/TimeSub/seventhadder/Mxor_sum_xo<0>211 (module7/TimeSub/seventhadder/Mxor_sum_xo<0>21)
+     LUT5:I4->O            1   0.097   0.753  module7/TimeSub/lastadder/Mxor_sum_xo<0>1 (module7/TimeSub/lastadder/Mxor_sum_xo<0>)
+     LUT6:I0->O            1   0.097   0.339  module7/TimeSub/lastadder/Mxor_sum_xo<0>3 (time_total_7_OBUF)
+     OBUF:I->O                 0.000          time_total_7_OBUF (time_total<7>)
+    ----------------------------------------
+    Total                      3.443ns (0.486ns logic, 2.957ns route)
+                                       (14.1% logic, 85.9% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 143.00 secs
+Total CPU time to Xst completion: 143.25 secs
+ 
+--> 
+
+Total memory usage is 783968 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   17 (   0 filtered)
+Number of infos    :    8 (   0 filtered)
+
