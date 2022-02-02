@@ -1,0 +1,28 @@
+Command line:
+   exit_parking_lot_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  6346
+
+Tue Jan 04 00:27:04 2022
+
+
+ Elaboration Time: 0.09375 sec
+
+ Current Memory Usage: 5154.5 Meg
+
+ Total Signals          : 14
+ Total Nets             : 24
+ Total Signal Drivers   : 6
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 8
+ Total Traceable Variables  : 19
+ Total Scalar Nets and Variables : 112
+
+ Total Simulation Time: 0.09375 sec
+
+ Current Memory Usage: 5154.5 Meg
+
+Tue Jan 04 00:27:16 2022
+
