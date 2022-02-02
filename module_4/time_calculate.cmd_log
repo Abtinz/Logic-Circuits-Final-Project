@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Users/ASUS.PIESC/Desktop/Logic Circuit Final Project Section-01/module_4/time_calculate.xst" -ofn "C:/Users/ASUS.PIESC/Desktop/Logic Circuit Final Project Section-01/module_4/time_calculate.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 "time_calculate.ngc" time_calculate.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o time_calculate_map.ncd time_calculate.ngd time_calculate.pcf 
+par -w -intstyle ise -ol high -mt off time_calculate_map.ncd time_calculate.ncd time_calculate.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml time_calculate.twx time_calculate.ncd -o time_calculate.twr time_calculate.pcf 
+xst -intstyle ise -ifn "C:/Users/ASUS.PIESC/Desktop/Logic Circuit Final Project Section-01/module_4/time_calculate.xst" -ofn "C:/Users/ASUS.PIESC/Desktop/Logic Circuit Final Project Section-01/module_4/time_calculate.syr" 

@@ -1,0 +1,4 @@
+verilog work "fullAdder.v"
+verilog work "adderSubtractor.v"
+verilog work "Subtractors.v"
+verilog work "time_calculate.v"
