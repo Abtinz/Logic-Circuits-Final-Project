@@ -1,0 +1,3 @@
+verilog work "park_space_number.v"
+verilog work "entry_checker.v"
+verilog work "entry_park.v"
